@@ -19,8 +19,7 @@ namespace HealthChecks.Publisher.ApplicationInsights
         const string HEALTHCHECK_NAME = "AspNetCoreHealthCheckName";
 
         private readonly string _instrumentationKey;
-        private readonly TelemetryClient _client;
-        private static readonly object sync_root = new object();
+        private readonly TelemetryClient _client;        
         private readonly bool _saveDetailedReport;
         private readonly bool _excludeHealthyReports;
 
